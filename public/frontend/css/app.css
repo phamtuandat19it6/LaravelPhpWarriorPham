@@ -1,0 +1,197 @@
+:root {
+  --font: "Montserrat", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body p {
+font-family: var(--font);
+overflow-y: hidden;
+width: 100%;
+overflow-x: hidden;
+
+}
+
+
+li {
+        list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 16;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+header:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transition: linear 0.3s;
+}
+header.sticky {
+  background-color: #f4eded;
+}
+h2.cate {
+    margin: 8px 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ed8916;
+    margin-bottom: 20px;
+}
+/* i.fa.fa-angle-right {
+    font-weight: bold !important;
+    font-size: 45px;
+} */
+/* i.fa.fa-angle-left {
+    font-weight: bold !important;
+    font-size: 45px;
+} */
+.logo {
+  flex: 1;
+}
+.menus {
+  flex: 3;
+  display: flex;
+}
+.menus > li {
+  padding: 0 12px;
+  position: relative;
+}
+.hot {
+  color: rgb(246, 4, 4) !important;
+}
+.menus > li:hover .sub-menus {
+  visibility: visible;
+  top: 45px;
+  /* transition: linear 0.3s; */
+  z-index: 1000;
+}
+.sub-menus {
+    transition: linear 0.3s;
+  visibility: hidden;
+  position: absolute;
+  width: 150px;
+  border: 1px solid grey;
+  padding: 10px 0 10px 20px;
+  top: 60px;
+  z-index: 100;
+  background-color: #f4eded;
+  border: none;
+}
+.sub-menus > li a {
+  display: block;
+  font-size: 13px !important;
+  line-height: 1.1;
+  font-weight: 600 !important;
+  margin-bottom: 16px;
+  color: #535050;
+
+
+}
+button#completed-task {
+    background: transparent;
+    border: transparent;
+}
+.sub-menus > li ul {
+  display: block;
+  padding-left: 5px;
+  line-height: 20px;
+}
+.sub-menus .li li a {
+  display: block;
+  line-height: 1.1;
+  font-weight: 500 !important;
+  color: #696763;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px !important;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+}
+
+.menus > li a {
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  line-height: 20px;
+  color: #535050;
+}
+.orthers {
+  flex: -1;
+  display: flex;
+  transform: translateX(25px);
+}
+.orthers li a{
+    font-size: 12px;
+    font-weight: 600;
+    display: block;
+    line-height: 20px;
+    color: #535050;
+}
+.orthers li a p{
+ font-family: var(--font);
+ display: inline;
+}
+.orthers > li {
+  padding: 0 12px;
+  position: relative;
+}
+.orthers li::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  border: 1px solid #ccc;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.orthers li:last-child::after {
+  display: none;
+}
+.orthers > li:not(:first-child) {
+  padding: 0 12px;
+}
+.orthers > li:first-child {
+  position: relative;
+}
+.orthers > li:first-child i {
+  position: absolute;
+  right: 10px;
+}
+.orthers > li:first-child input {
+  width: 100px;
+  border: none;
+  background: transparent;
+  outline: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.table.table-condensed li{
+    list-style: none;
+}
+/* -----------------------------app------------------------ */
+
+/* ----------------------------footer-------------------------- */
+
+/* -----------category------------- */
+
+
+
+
+
+/* -------------payment--------- */
+
+
